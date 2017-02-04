@@ -14,6 +14,23 @@ public class Main {
 
 		System.out.println(String.format("Time: %d [ns]", (System.nanoTime() - beginTime)));
 		System.out.println("Sum: " + sum);
+		
+		System.out.println();
+		System.out.println("Iteration method.");
+		
+		sum = 0L;
+		beginTime = System.nanoTime();
+		
+		for(long i = 0L; i < limit; ++i){
+			if(i % 3 == 0 || i % 5 == 0){
+				sum += i;
+			}
+		}
+		
+		System.out.println(String.format("Time: %d [ns]", (System.nanoTime() - beginTime)));
+		System.out.println("Sum: " + sum);
+		
+		System.out.println("End.");
 
 	}
 
