@@ -13,7 +13,7 @@ public class Main {
 		long sum = (3 * (limit / 3 * (limit / 3 + 1)) - 15 * (limit / 15 * (limit / 15 + 1))
 				+ 5 * (limit / 5 * (limit / 5 + 1))) / 2;
 
-		System.out.println(String.format("Time: %.3f [ms]", (System.nanoTime() - beginTime) / 1000.));
+		System.out.println(String.format("Time: %.3f [ms]", (System.nanoTime() - beginTime) / 1_000_000.));
 		System.out.println("Sum: " + sum);
 
 		System.out.println();
@@ -28,7 +28,7 @@ public class Main {
 			}
 		}
 
-		System.out.println(String.format("Time: %.3f [ms]", (System.nanoTime() - beginTime) / 1000.));
+		System.out.println(String.format("Time: %.3f [ms]", (System.nanoTime() - beginTime) / 1_000_000.));
 		System.out.println("Sum: " + sum);
 
 		System.out.println("End.");
